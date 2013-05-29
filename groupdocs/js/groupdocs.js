@@ -20,8 +20,8 @@ var GroupdocsDialog = {
                 var file_id = document.forms[0].groupdocs_file_id.value;
                 var height =  document.forms[0].height.value;
                 var width = document.forms[0].width.value;
-                var iframe = '<iframe src="https://apps.groupdocs.com/document-viewer/embed/'+file_id+'" frameborder="0" width="'+width+'" height="'+height+'">'+
-                                    '<!--<p>Click <a href=">here</a> to download the document.</p>-->'+
+                var iframe = '<iframe src="https://apps.groupdocs.com/document-viewer/embed/'+file_id+'?&referer=tinymce-Viewer/1.0" frameborder="0" width="'+width+'" height="'+height+'">'+
+                                    'If you can see this text, your browser does not support iframes. Please enable iframe support in your browser or use the latest version of any popular web browser such as Mozilla Firefox or Google Chrome. For more help, please check our documentation Wiki: http://groupdocs.com/docs/display/Viewer/GroupDocs+Viewer+Integration+with+3rd+Party+Platforms'+
                                 '</iframe>';
 		tinyMCEPopup.editor.execCommand('mceInsertContent', false, iframe);
 		tinyMCEPopup.close();
